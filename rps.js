@@ -1,3 +1,9 @@
+/*
+This function is responsible for making the computer play
+It randomly returns either ‘Rock’, ‘Paper’ or ‘Scissors’.
+*/
+
+
 function getComputerChoice() {
     let allChoices = ["Rock", "Paper", "Scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
