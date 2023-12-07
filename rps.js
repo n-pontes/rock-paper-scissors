@@ -62,3 +62,10 @@ function winGame () {
         return "You lost the game!";
     }
 }
+
+// calls the game function
+game();
+
+// Shows the player and computer scores
+console.log(playerScore);
+console.log(computerScore);
