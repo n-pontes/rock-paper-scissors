@@ -1,29 +1,9 @@
 function getComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3);
-    
-    switch(randomNumber) {
-    case 0:
-      return "rock";
-    case 1:
-      return "paper";
-    case 2:
-      return "scissors";
-    }
+    let allChoices = ["Rock", "Paper", "Scissors"];
+    let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
+    return randomChoice;
 }
 
-function playRound (playerSelection, computerSelection) {
-        if (playerSelection === 'rock' && computerSelection === 'rock') {
-            console.log("Its a tie!");
-        } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-            console.log("Paper beats Rock, you lose!");
-        } else {
-            console.log ("Rock beats Scissors, you win!");
-        }
-    }
+// Tests the randomizer function, if it prints out Rock, Paper or SCissors
 
-const playerSelection = 'rock';
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
-
-
+//console.log(getComputerChoice());
