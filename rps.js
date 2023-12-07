@@ -42,16 +42,16 @@ function playRound (playerSelection, computerSelection) {
         return "It's a tie!";
     } else if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
         playerScore += 1;
-        return `You win!`;
+        return `You win! ${playerSelection} beats ${computerSelection}!`;
     } else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
         playerScore += 1;
-        return `You win!`;
+        return `You win! ${playerSelection} beats ${computerSelection}!`;
     } else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
         playerScore += 1;
-        return `You win!`;
+        return `You win! ${playerSelection} beats ${computerSelection}!`;
     } else {
         computerScore += 1;
-        return `You lose!`;
+        return `You lose! ${computerSelection} beats ${playerSelection}!`;
     }
 }
 
