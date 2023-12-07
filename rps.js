@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 /*
 This function is responsible for making the computer play
 It randomly returns either ‘Rock’, ‘Paper’ or ‘Scissors’.
@@ -8,10 +11,25 @@ function getComputerChoice() {
     let allChoices = ["Rock", "Paper", "Scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
     return randomChoice;
+
+    
 }
 
 // Tests the randomizer function, if it prints out Rock, Paper or SCissors
 
+//console.log(getComputerChoice());
+
+/**
+ * The game keeps on playing until either the player or the computer achieves 5 points
+ */
+
+function game () {
+    while (playerScore < 5 && computerScore < 5) {
+        const playerSelection = prompt("Do you choose, rock, paper or scissors?");
+        const computerSelection = getComputerChoice();
+        alert(playRound(playerSelection, computerSelection));
+    }
+}
 //console.log(getComputerChoice());
 
 /**
