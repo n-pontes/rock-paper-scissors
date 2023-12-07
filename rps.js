@@ -1,3 +1,14 @@
+function playRound (playerSelection, computerSelection) {
+    if (playerSelection === 'paper' && computerSelection === 'rock' 
+    || playerSelection === 'scissors' && computerSelection === 'paper' 
+    || playerSelection === 'rock' && computerSelection === 'scissors') {
+        return alert('player wins');
+    } 
+}
+
+
+
+
 function getComputerChoice() {
       const randomNumber = Math.floor(Math.random() * 3);
       
