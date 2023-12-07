@@ -54,3 +54,11 @@ function playRound (playerSelection, computerSelection) {
         return `You lose!`;
     }
 }
+
+function winGame () {
+    if (playerScore == 5) {
+        return "You won the game!";
+    } else if (computerScore == 5) {
+        return "You lost the game!";
+    }
+}
