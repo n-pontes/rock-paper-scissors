@@ -1,6 +1,6 @@
 # Project: Rock Paper Scissors
 
-Implementation of Rock Paper and Scissors, for The Odin Project [curriculum] (https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
+Implementation of Rock Paper and Scissors, for The Odin Project [curriculum](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
 ## First stage | Game in the browser console
 
