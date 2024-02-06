@@ -3,8 +3,8 @@
 Project to create Rock Paper Scissors game using only HTML, CSS and Vanilla JS.
 
 ## First stage | Game in the browser console
-The benefits I got from this stage:
-Deepened knowledge of how functions work with each other.
+The benefits I got from this stage: <br>
+Deepened knowledge of how functions work with each other.<br>
 
 ## Second stage | Game with added UI
 The benefits I got from this stage:
