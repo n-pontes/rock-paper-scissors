@@ -19,7 +19,7 @@ getComputerChoice = () => {
     let allChoices = ["rock", "paper", "scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
     return randomChoice;
-}
+};
 
 /**
  * The game keeps on playing until either the player or the computer achieves 5 points
@@ -39,7 +39,7 @@ game = () => {
         const computerSelection = getComputerChoice();
         alert(playRound(playerSelection, computerSelection));
     }
-}
+};
 
 /**
  * the function playRound grabs two parameters player choice and the random parameter for the computer
@@ -69,7 +69,7 @@ game = () => {
     }
 }*/
 
-playRound = () => (playerSelection, computerSelection) {
+playRound = (playerSelection, computerSelection) => {
     playerSelection = playerSelection.toLowerCase(); // function to transform the string into lowercase just so its not case sensitive
     if (playerSelection === computerSelection) {
         return "It's a tie!";
@@ -90,7 +90,7 @@ playRound = () => (playerSelection, computerSelection) {
     } else {
         return "Invalid Input!";
     }
-}
+};
 
 /*function winGame () {
     if (playerScore == 5) {
@@ -106,7 +106,7 @@ winGame = () => {
     } else if (computerScore == 5) {
         return "You lost the game!";
     }
-}
+};
 
 // calls the game function
 game();
