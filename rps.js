@@ -10,7 +10,7 @@ This function is responsible for making the computer play
 It randomly returns either ‘Rock’, ‘Paper’ or ‘Scissors’.
 */
 
-getComputerChoice = () => {
+const getComputerChoice = () => {
     let allChoices = ["rock", "paper", "scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
     return randomChoice;
@@ -20,7 +20,7 @@ getComputerChoice = () => {
  * The game keeps on playing until either the player or the computer achieves 5 points
  */
 
-game = () => {
+const game = () => {
     while (playerScore < 5 && computerScore < 5) {
         const playerSelection = prompt("Do you choose, rock, paper or scissors?");
         const computerSelection = getComputerChoice();
@@ -33,7 +33,7 @@ game = () => {
  * 
 */
 
-playRound = (playerSelection, computerSelection) => {
+const playRound = (playerSelection, computerSelection) => {
     playerSelection = playerSelection.toLowerCase(); // function to transform the string into lowercase just so its not case sensitive
     if (playerSelection === computerSelection) {
         return "It's a tie!";
@@ -61,7 +61,7 @@ This function verifies if the player score is higher than the computer
 If that is the case player wins the game otherwise he loses
 */
 
-winGame = () => {
+const winGame = () => {
     if (playerScore == 5) {
         return "You won the game!";
     } else if (computerScore == 5) {
