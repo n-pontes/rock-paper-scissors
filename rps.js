@@ -55,8 +55,10 @@ function game () {
     }
 }*/
 
+// the function playRound grabs two parameters player choice and the random parameter for the computer
+
 function playRound (playerSelection, computerSelection) {
-    //playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
         return "It's a tie!";
     } else if (
