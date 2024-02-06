@@ -8,7 +8,7 @@ It randomly returns either ‘Rock’, ‘Paper’ or ‘Scissors’.
 
 
 function getComputerChoice() {
-    let allChoices = ["Rock", "Paper", "Scissors"];
+    let allChoices = ["rock", "paper", "scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
     return randomChoice;
 }
@@ -26,14 +26,6 @@ function game () {
         const playerSelection = prompt("Do you choose, rock, paper or scissors?");
         const computerSelection = getComputerChoice();
         alert(playRound(playerSelection, computerSelection));
-    }
-}
-
-function winGame () {
-    if (playerScore == 5) {
-        return "You won the game!";
-    } else if (computerScore == 5) {
-        return "You lost the game!";
     }
 }
 
@@ -64,7 +56,7 @@ function winGame () {
 }*/
 
 function playRound (playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
+    //playerSelection = playerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
         return "It's a tie!";
     } else if (
@@ -74,9 +66,23 @@ function playRound (playerSelection, computerSelection) {
     ) {
         playerScore += 1;
         return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else {
+    } else if (
+        (computerSelection === 'scissors' && playerSelection === 'paper') ||
+        (computerSelection === 'rock' && playerSelection === 'scissors') ||
+        (computerSelection === 'paper' && playerSelection === 'rock')
+    ) {
         computerScore += 1;
         return `You lose! ${computerSelection} beats ${playerSelection}!`;
+    } else {
+        return "Invalid Input!";
+    }
+}
+
+function winGame () {
+    if (playerScore == 5) {
+        return "You won the game!";
+    } else if (computerScore == 5) {
+        return "You lost the game!";
     }
 }
 
@@ -85,6 +91,7 @@ game();
 
 // calls the win game function
 //winGame();
+
 
 // Shows the player and computer scores
 console.log(playerScore);
