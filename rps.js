@@ -65,6 +65,8 @@ function winGame () {
 
 // calls the game function
 game();
+
+// calls the win game function
 winGame();
 
 // Shows the player and computer scores
