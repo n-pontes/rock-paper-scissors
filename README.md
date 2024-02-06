@@ -1,6 +1,6 @@
-# Rock Paper Scissors
+# Project: Rock Paper Scissors
 
-Project to create Rock Paper Scissors game using only HTML, CSS and Vanilla JS.
+Implementation of Rock Paper and Scissors, for The Odin Project [curriculum] (https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
 ## First stage | Game in the browser console
 The benefits I got from this stage: <br>
