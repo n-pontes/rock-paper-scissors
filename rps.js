@@ -11,8 +11,6 @@ function getComputerChoice() {
     let allChoices = ["Rock", "Paper", "Scissors"];
     let randomChoice = allChoices[Math.floor(Math.random() * allChoices.length)];
     return randomChoice;
-
-    
 }
 
 // Tests the randomizer function, if it prints out Rock, Paper or SCissors
@@ -40,13 +38,13 @@ function game () {
 function playRound (playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return "It's a tie!";
-    } else if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
+    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
         playerScore += 1;
         return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
+    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
         playerScore += 1;
         return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
+    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
         playerScore += 1;
         return `You win! ${playerSelection} beats ${computerSelection}!`;
     } else {
