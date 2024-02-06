@@ -23,11 +23,20 @@ function getComputerChoice() {
 
 function game () {
     while (playerScore < 5 && computerScore < 5) {
-        const playerSelection = prompt("Do you choose, rock, paper or scissors?").toLowerCase();
+        const playerSelection = prompt("Do you choose, rock, paper or scissors?");
         const computerSelection = getComputerChoice();
         alert(playRound(playerSelection, computerSelection));
     }
 }
+
+function winGame () {
+    if (playerScore == 5) {
+        return "You won the game!";
+    } else if (computerScore == 5) {
+        return "You lost the game!";
+    }
+}
+
 //console.log(getComputerChoice());
 
 /**
@@ -35,7 +44,8 @@ function game () {
  * Contains the logic for the game
  * 
 */
-function playRound (playerSelection, computerSelection) {
+/*function playRound (playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
         return "It's a tie!";
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
@@ -51,13 +61,22 @@ function playRound (playerSelection, computerSelection) {
         computerScore += 1;
         return `You lose! ${computerSelection} beats ${playerSelection}!`;
     }
-}
+}*/
 
-function winGame () {
-    if (playerScore == 5) {
-        return "You won the game!";
-    } else if (computerScore == 5) {
-        return "You lost the game!";
+function playRound (playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
+    if (playerSelection === computerSelection) {
+        return "It's a tie!";
+    } else if (
+        (playerSelection === 'scissors' && computerSelection === 'paper') ||
+        (playerSelection === 'rock' && computerSelection === 'scissors') ||
+        (playerSelection === 'paper' && computerSelection === 'rock')
+    ) {
+        playerScore += 1;
+        return `You win! ${playerSelection} beats ${computerSelection}!`;
+    } else {
+        computerScore += 1;
+        return `You lose! ${computerSelection} beats ${playerSelection}!`;
     }
 }
 
@@ -65,7 +84,7 @@ function winGame () {
 game();
 
 // calls the win game function
-winGame();
+//winGame();
 
 // Shows the player and computer scores
 console.log(playerScore);
