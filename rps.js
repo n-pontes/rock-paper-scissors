@@ -25,7 +25,7 @@ function getComputerChoice() {
 
 function game () {
     while (playerScore < 5 && computerScore < 5) {
-        const playerSelection = prompt("Do you choose, rock, paper or scissors?");
+        const playerSelection = prompt("Do you choose, rock, paper or scissors?").toLowerCase();
         const computerSelection = getComputerChoice();
         alert(playRound(playerSelection, computerSelection));
     }
