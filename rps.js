@@ -1,3 +1,5 @@
+// Global variables for the player and computers score
+
 let playerScore = 0;
 let computerScore = 0;
 
@@ -13,10 +15,6 @@ function getComputerChoice() {
     return randomChoice;
 }
 
-// Tests the randomizer function, if it prints out Rock, Paper or SCissors
-
-//console.log(getComputerChoice());
-
 /**
  * The game keeps on playing until either the player or the computer achieves 5 points
  */
@@ -29,33 +27,10 @@ function game () {
     }
 }
 
-//console.log(getComputerChoice());
-
 /**
- * This is the round function, allows to update the player score and computer score
- * Contains the logic for the game
+ * the function playRound grabs two parameters player choice and the random parameter for the computer
  * 
 */
-/*function playRound (playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
-    if (playerSelection === computerSelection) {
-        return "It's a tie!";
-    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        playerScore += 1;
-        return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-        playerScore += 1;
-        return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        playerScore += 1;
-        return `You win! ${playerSelection} beats ${computerSelection}!`;
-    } else {
-        computerScore += 1;
-        return `You lose! ${computerSelection} beats ${playerSelection}!`;
-    }
-}*/
-
-// the function playRound grabs two parameters player choice and the random parameter for the computer
 
 function playRound (playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase(); // function to transform the string into lowercase just so its not case sensitive
@@ -93,7 +68,6 @@ game();
 
 // calls the win game function
 winGame();
-
 
 // Shows the player and computer scores
 console.log(playerScore);
