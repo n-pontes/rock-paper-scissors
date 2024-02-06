@@ -1,31 +1,31 @@
-# rock-paper-scissors
+# Rock Paper Scissors
 
 Project to create Rock Paper Scissors game using only HTML, CSS and Vanilla JS.
 
-First stage | Game in the browser console
+## First stage | Game in the browser console
 The benefits I got from this stage:
 Deepened knowledge of how functions work with each other.
 
-Second stage | Game with added UI
+## Second stage | Game with added UI
 The benefits I got from this stage:
 (Under construction)
 
-Built with
+## Built with
 
-Technologies
-HTML
-CSS
-JS
+### Technologies
++ HTML
++ CSS
++ JS
 
-Tools
-Visual Studio Code
-Linux terminal
-Git and GitHub
+### Tools
++ Visual Studio Code
++ Linux terminal
++ Git and GitHub
 
-Summary
+## Summary
 (Under Construction)
 
-What is Rock Paper and Scissors:
+## What is Rock Paper and Scissors:
 
 Rock paper scissors is an intransitive hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). 
 
