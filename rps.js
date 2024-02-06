@@ -58,7 +58,7 @@ function game () {
 // the function playRound grabs two parameters player choice and the random parameter for the computer
 
 function playRound (playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase(); // function to transform the string into lowercase just so its not case sensitive
     if (playerSelection === computerSelection) {
         return "It's a tie!";
     } else if (
@@ -92,7 +92,7 @@ function winGame () {
 game();
 
 // calls the win game function
-//winGame();
+winGame();
 
 
 // Shows the player and computer scores
