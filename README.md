@@ -3,15 +3,16 @@
 Implementation of Rock Paper and Scissors, for The Odin Project [curriculum] (https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
 ## First stage | Game in the browser console
-The benefits I got from this stage: <br>
-Deepened knowledge of how functions work with each other.<br>
+
+### The benefits I got from this stage:
++ Deepened knowledge of how functions work with each other.
++ (More to be added later).
 
 ## Second stage | Game with added UI
-The benefits I got from this stage:
-(Under construction)
+### The benefits I got from this stage:
++ (Under construction)
 
 ## Built with
-
 ### Technologies
 + HTML
 + CSS
