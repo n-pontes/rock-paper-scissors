@@ -65,6 +65,7 @@ function winGame () {
 
 // calls the game function
 game();
+winGame ();
 
 // Shows the player and computer scores
 console.log(playerScore);
