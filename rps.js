@@ -6,12 +6,6 @@
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
-const choice = document.getElementById('choice');
-
-// Appends the player choices into the choices div
-//choice.appendChild(rock);
-//choice.appendChild(paper);
-//choice.appendChild(scissors);
 
 /* 
 Global variables for the player and computers score
