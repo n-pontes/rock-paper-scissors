@@ -7,8 +7,12 @@ const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
 const results = document.getElementById('resultsCont');
+
 const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
+
+results.appendChild(player);
+results.appendChild(computer);
 
 
 /* 
@@ -112,5 +116,7 @@ winGame();
 // Shows the player and computer scores
 console.log(playerScore);
 console.log(computerScore);
+
+results.textContent = "The player score is: " + playerScore + " and the computer score is: " + computerScore;
 
 //});
