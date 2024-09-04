@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
+const choices = document.querySelector('choices');
 
 /* 
 Global variables for the player and computers score
@@ -108,5 +109,9 @@ winGame();
 // Shows the player and computer scores
 console.log(playerScore);
 console.log(computerScore);
+
+choices.appendChild(rock);
+choices.appendChild(paper);
+choices.appendChild(scissors);
 
 });
