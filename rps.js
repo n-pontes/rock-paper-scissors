@@ -11,8 +11,7 @@ const gameCont = document.getElementById('gameContent');
 const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
 
-results.appendChild(player);
-results.appendChild(computer);
+
 
 
 /* 
