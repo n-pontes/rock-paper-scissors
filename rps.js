@@ -90,16 +90,29 @@ let isGameOver = () => {
 };
 
 let resetGame = () => {
-    
+
+        // Disabled buttons to prevent any further clicks during the reset process
+
+        rock.setAttribute("disabled", 'true'); 
+        paper.setAttribute("disabled", 'true');
+        scissors.setAttribute("disabled", 'true');
+
+        // Resets the scores
         playerScore = 0;
         computerScore = 0;
+
+        // Clears the display
         player.textContent = '';
         computer.textContent = '';
-        selectWinner.textContent = ""
+        selectWinner.textContent = "";
+        gameCont.textContent = "";
+
+        // Re-enables the buttons after the reset
         rock.removeAttribute("disabled");
         paper.removeAttribute("disabled");
         scissors.removeAttribute("disabled");
-}
+
+};
 
 restart.addEventListener ('click', () => {
     resetGame();
