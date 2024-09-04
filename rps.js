@@ -1,8 +1,3 @@
-// Ensures that the script runs only after the DOM has been fully loaded
-
-//document.addEventListener('DOMContentLoaded', () => {
-  //  console.log('DOM fully loaded and parsed');
-
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
@@ -10,9 +5,6 @@ const results = document.getElementById('resultsCont');
 const gameCont = document.getElementById('gameContent');
 const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
-
-
-
 
 /* 
 Global variables for the player and computers score
@@ -115,7 +107,3 @@ winGame();
 // Shows the player and computer scores
 console.log(playerScore);
 console.log(computerScore);
-
-results.textContent = "The player score is: " + playerScore + " and the computer :" + computerScore;
-
-//});
