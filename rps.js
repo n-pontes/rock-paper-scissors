@@ -63,11 +63,27 @@ const updateDisplay = () => {
 
 let isGameOver = () => {
     if (playerScore === 5) {
+        // player wins the game
         selectWinner.textContent = "The player wins the game!";
+        // buttons are disabled
+        rock.setAttribute("disabled", 'true'); 
+        paper.setAttribute("disabled", 'true');
+        scissors.setAttribute("disabled", 'true');
     } else if (computerScore === 5) {
+        // computer wins the game
         selectWinner.textContent = "The computer wins the game!";
+        // buttons are disabled
+        rock.setAttribute("disabled", 'true');
+        paper.setAttribute("disabled", 'true');
+        scissors.setAttribute("disabled", 'true');
     } else {
+        // game is still ongoing, ensures the buttons are still enabled
         selectWinner.textContent = "";
+        if (rock && paper && scissors) { // check if the elements are valid
+            rock.removeAttribute("disabled");
+            paper.removeAttribute("disabled");
+            scissors.removeAttribute("disabled");
+        }      
     }
 };
 
