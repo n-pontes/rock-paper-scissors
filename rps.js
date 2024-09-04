@@ -7,6 +7,7 @@ const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
 const selectWinner = document.getElementById('winner');
 const restart = document.getElementById('reset');
+
 /* 
 Global variables for the player and computers score
 */
@@ -87,6 +88,18 @@ let isGameOver = () => {
         }      
     }
 };
+
+let resetGame = () => {
+    
+        playerScore = 0;
+        computerScore = 0;
+        player.textContent = '';
+        computer.textContent = '';
+        selectWinner.textContent = ""
+        rock.removeAttribute("disabled");
+        paper.removeAttribute("disabled");
+        scissors.removeAttribute("disabled");
+}
 
 
 
