@@ -101,7 +101,9 @@ let resetGame = () => {
         scissors.removeAttribute("disabled");
 }
 
-
+restart.addEventListener ('click', () => {
+    resetGame();
+});  
 
 
 // Event listeners for player selection
