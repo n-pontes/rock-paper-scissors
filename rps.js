@@ -1,7 +1,7 @@
+// Ensures that the script runs only after the DOM has been fully loaded
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
-
-// Document Object Model References
 
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
