@@ -1,8 +1,8 @@
 // Document Object Model References
 
-const rock = document.getElementById('#rockBtn');
-const paper = document.getElementById('#paperBtn');
-const scissors = document.getElementById('#scissorsBtn');
+const rock = document.getElementById('rockBtn');
+const paper = document.getElementById('paperBtn');
+const scissors = document.getElementById('scissorsBtn');
 
 /* 
 Global variables for the player and computers score
@@ -62,6 +62,8 @@ const playRound = (playerSelection, computerSelection) => {
         return "Invalid Input!";
     }
 };
+
+
 
 /*
 This function verifies if the player score is higher than the computer
