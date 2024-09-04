@@ -65,6 +65,8 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
+// Updates in real time the player and computer scores
+
 const updateDisplay = () => {
     player.textContent = `The player score is: ${playerScore}`;
     computer.textContent = `The computer score is: ${computerScore}`;
