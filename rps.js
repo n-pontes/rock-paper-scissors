@@ -1,12 +1,17 @@
 // Ensures that the script runs only after the DOM has been fully loaded
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
+//document.addEventListener('DOMContentLoaded', () => {
+  //  console.log('DOM fully loaded and parsed');
 
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
-const choices = document.getElementById('choicesDiv');
+const choice = document.getElementById('choice');
+
+// Appends the player choices into the choices div
+//choice.appendChild(rock);
+//choice.appendChild(paper);
+//choice.appendChild(scissors);
 
 /* 
 Global variables for the player and computers score
@@ -110,9 +115,4 @@ winGame();
 console.log(playerScore);
 console.log(computerScore);
 
-// Appends the player choices into the choices div
-choices.appendChild(rock);
-choices.appendChild(paper);
-choices.appendChild(scissors);
-
-});
+//});
