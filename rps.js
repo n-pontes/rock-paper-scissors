@@ -5,7 +5,7 @@ const results = document.getElementById('resultsCont');
 const gameCont = document.getElementById('gameContent');
 const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
-
+const selectWinner = document.getElementById('winner');
 /* 
 Global variables for the player and computers score
 */
@@ -58,11 +58,6 @@ const updateDisplay = () => {
     player.textContent = `The player score is: ${playerScore}`;
     computer.textContent = `The computer score is: ${computerScore}`;
 
-    if (playerScore === 5) {
-        return "You won the game!";
-    } else if (computerScore === 5) {
-        return "You lost the game!";
-    }
 };
 
 // Event listeners for player selection
