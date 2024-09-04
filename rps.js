@@ -72,6 +72,20 @@ rock.addEventListener('click', () => {
     console.log(playRound(playerSelection, computerSelection));
 });
 
+
+paper.addEventListener('click', () => {
+    let playerSelection = 'paper';
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
+scissors.addEventListener('click', () => {
+    let playerSelection = 'scissors';
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
+
 /*
 This function verifies if the player score is higher than the computer
 If that is the case player wins the game otherwise he loses
