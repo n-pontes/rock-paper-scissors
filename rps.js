@@ -1,8 +1,8 @@
 // Document Object Model References
 
-const rock = document.querySelector('#rock');
-const pap = document.querySelector('#pap');
-const sci = document.querySelector('#sci');
+const rock = document.querySelector('#rockBtn');
+const paper = document.querySelector('#paperBtn');
+const scissors = document.querySelector('#scissorsBtn');
 
 /* 
 Global variables for the player and computers score
