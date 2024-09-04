@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');
+
 // Document Object Model References
 
 const rock = document.getElementById('rockBtn');
@@ -63,7 +66,11 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
-
+rock.addEventListener('click', () => {
+    let playerSelection = 'rock';
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
 
 /*
 This function verifies if the player score is higher than the computer
@@ -79,7 +86,7 @@ const winGame = () => {
 };
 
 // calls the game function
-game();
+//game();
 
 // calls the win game function
 winGame();
@@ -87,3 +94,5 @@ winGame();
 // Shows the player and computer scores
 console.log(playerScore);
 console.log(computerScore);
+
+});
