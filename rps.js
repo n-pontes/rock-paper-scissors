@@ -6,6 +6,7 @@ const gameCont = document.getElementById('gameContent');
 const player = document.getElementById('pScore');
 const computer = document.getElementById('cScore');
 const selectWinner = document.getElementById('winner');
+const restart = document.getElementById('reset');
 /* 
 Global variables for the player and computers score
 */
@@ -86,6 +87,7 @@ let isGameOver = () => {
         }      
     }
 };
+
 
 
 
