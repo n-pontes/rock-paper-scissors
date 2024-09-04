@@ -20,13 +20,14 @@ const getComputerChoice = () => {
  * The game keeps on playing until either the player or the computer achieves 5 points
  */
 
+/* REMOVING LOGIC TEMPORARILY
 const game = () => {
     while (playerScore < 5 && computerScore < 5) {
         const playerSelection = prompt("Do you choose, rock, paper or scissors?");
         const computerSelection = getComputerChoice();
         alert(playRound(playerSelection, computerSelection));
     }
-};
+};*/
 
 /**
  * the function playRound grabs two parameters player choice and the random parameter for the computer
