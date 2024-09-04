@@ -65,6 +65,8 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
+// Event listeners for player selection
+
 rock.addEventListener('click', () => {
     let playerSelection = 'rock';
     let computerSelection = getComputerChoice();
