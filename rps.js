@@ -57,12 +57,21 @@ const playRound = (playerSelection, computerSelection) => {
 const updateDisplay = () => {
     player.textContent = `The player score is: ${playerScore}`;
     computer.textContent = `The computer score is: ${computerScore}`;
+    isGameOver();
 
 };
 
-const isGameOver = () => {
-    
-}
+let isGameOver = () => {
+    if (playerScore === 5) {
+        selectWinner.textContent = "The player wins the game!";
+    } else if (computerScore === 5) {
+        selectWinner.textContent = "The computer wins the game!";
+    } else {
+        selectWinner.textContent = "";
+    }
+};
+
+
 
 // Event listeners for player selection
 
