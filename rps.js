@@ -60,6 +60,10 @@ const updateDisplay = () => {
 
 };
 
+const isGameOver = () => {
+    
+}
+
 // Event listeners for player selection
 
 rock.addEventListener('click', () => {
