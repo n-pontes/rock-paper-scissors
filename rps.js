@@ -77,20 +77,26 @@ const updateDisplay = () => {
 rock.addEventListener('click', () => {
     let playerSelection = 'rock';
     let computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+    const result = playRound(playerSelection, computerSelection);
+    gameCont.textContent = result;
+    updateDisplay();
 });
 
 
 paper.addEventListener('click', () => {
     let playerSelection = 'paper';
     let computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+    const result = playRound(playerSelection, computerSelection);
+    gameCont.textContent = result;
+    updateDisplay();
 });
 
 scissors.addEventListener('click', () => {
     let playerSelection = 'scissors';
     let computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+    const result = playRound(playerSelection, computerSelection);
+    gameCont.textContent = result;
+    updateDisplay();
 });
 
 
