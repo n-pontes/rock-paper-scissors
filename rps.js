@@ -65,6 +65,11 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
+const updateDisplay = () => {
+    player.textContent = `The player score is: ${playerScore}`;
+    computer.textContent = `The computer score is: ${computerScore}`;
+};
+
 // Event listeners for player selection
 
 rock.addEventListener('click', () => {
