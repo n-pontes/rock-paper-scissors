@@ -117,6 +117,6 @@ winGame();
 console.log(playerScore);
 console.log(computerScore);
 
-results.textContent = "The player score is: " + playerScore + " and the computer score"+ computerScore;
+results.textContent = "The player score is: " + playerScore + " and the computer :" + computerScore;
 
 //});
