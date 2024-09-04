@@ -57,6 +57,12 @@ const playRound = (playerSelection, computerSelection) => {
 const updateDisplay = () => {
     player.textContent = `The player score is: ${playerScore}`;
     computer.textContent = `The computer score is: ${computerScore}`;
+
+    if (playerScore === 5) {
+        return "You won the game!";
+    } else if (computerScore === 5) {
+        return "You lost the game!";
+    }
 };
 
 // Event listeners for player selection
@@ -85,21 +91,3 @@ scissors.addEventListener('click', () => {
     gameCont.textContent = result;
     updateDisplay();
 });
-
-
-/*
-This function verifies if the player score is higher than the computer
-If that is the case player wins the game otherwise he loses
-*/
-
-const winGame = () => {
-    if (playerScore == 5) {
-        return "You won the game!";
-    } else if (computerScore == 5) {
-        return "You lost the game!";
-    }
-};
-
-
-// calls the win game function
-winGame();
