@@ -45,3 +45,9 @@ main {
     align-items: center;
     margin-bottom: 2rem;
 }
+
+h2 {
+    color: #333; /* Dark text */
+    margin-bottom: 1rem; /* Space between title and buttons */
+    font-size: 1.5rem;
+}
