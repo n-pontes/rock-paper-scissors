@@ -91,3 +91,23 @@ button:hover {
     transform: scale(1.05);
 }
 
+.resetGame {
+    background-color: #b0bec5; /* Light slate gray */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Smaller font size */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 8px;
+    width: 120px; /* Smaller width */
+    height: 50px; /* Smaller height */
+    margin: 1rem auto; /* Center the button */
+    display: inline-flex; /* Center the button */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.resetGame:hover {
+    background-color: #90a4ae; /* Slightly darker gray */
+    opacity: 0.9;
+    transform: scale(1.05);
+}
