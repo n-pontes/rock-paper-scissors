@@ -18,3 +18,8 @@ header {
     padding: 2rem;
     border-bottom: 1px solid #ddd; /* Light gray border */
 }
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
