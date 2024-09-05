@@ -91,7 +91,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-.resetGame {
+#reset {
     background-color: #b0bec5; /* Light slate gray */
     color: #ffffff; /* White text */
     font-size: 1rem; /* Smaller font size */
@@ -106,7 +106,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.resetGame:hover {
+#reset:hover {
     background-color: #90a4ae; /* Slightly darker gray */
     opacity: 0.9;
     transform: scale(1.05);
