@@ -39,7 +39,7 @@ main {
     padding: 2rem;
 }
 
-.flex-buttons {
+#flex-buttons {
     display: flex;
     flex-direction: column; /* Stack title and button group vertically */
     align-items: center;
@@ -52,7 +52,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-.button-group {
+#button-group {
     display: flex; /* Align buttons in a row */
     gap: 1rem; /* Space between buttons */
     justify-content: center; /* Center buttons horizontally */
@@ -74,15 +74,15 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.rockBtn {
+#rockBtn {
     background-color: #9e9e9e; /* Medium gray */
 }
 
-.paperBtn {
+#paperBtn {
     background-color: #b0bec5; /* Light slate gray */
 }
 
-.scissorsBtn {
+#scissorsBtn {
     background-color: #cfd8dc; /* Light blue-gray */
 }
 
