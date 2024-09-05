@@ -111,3 +111,31 @@ button:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }
+
+#flex-commentary, #resultsCont {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+#flex-commentary p, #resultsCont p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333; /* Dark text */
+}
+
+#resultsCont {
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text */
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd; /* Light gray top border */
+}
