@@ -38,3 +38,10 @@ main {
     justify-content: center;
     padding: 2rem;
 }
+
+.flex-buttons {
+    display: flex;
+    flex-direction: column; /* Stack title and button group vertically */
+    align-items: center;
+    margin-bottom: 2rem;
+}
