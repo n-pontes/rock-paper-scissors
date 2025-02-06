@@ -49,3 +49,7 @@ Rock Paper Scissors is an intransitive hand game typically played between two pe
 + Win: Rock beats Scissors, Scissors beat Paper, and Paper beats Rock.
 + Draw: Both players choose the same shape.
 + Gameplay: The game is zero-sum, meaning one player’s gain is the other player’s loss. A tie results in a replay.
+
+Live: https://n-pontes.github.io/rock-paper-scissors/
+![image](https://github.com/user-attachments/assets/ff9a9517-42ca-44c6-98a2-c1a76a9cb667)
+
